@@ -1,4 +1,4 @@
-class Teste
+class DatasetImport
 
   def self.import(name, title, extension="jpg")
     d = Dataset.new(:title=>title)
