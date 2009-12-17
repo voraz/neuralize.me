@@ -1,0 +1,219 @@
+DEPRECATION WARNING: unverifiable_types is deprecated and has no effect. (called from /Volumes/data/voraz/voraz/kohonen/rails/vendor/plugins/rubyamf/app/mime_type.rb:3)
+
+
+Processing StudentsController#index (for 127.0.0.1 at 2009-06-07 19:57:07) [GET]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mStudent Load (0.4ms)[0m   [0;1mSELECT * FROM `students` [0m
+  [4;35;1mStudent Columns (3.4ms)[0m   [0mSHOW FIELDS FROM `students`[0m
+  [4;36;1mNote Load (2.8ms)[0m   [0;1mSELECT * FROM `notes` WHERE (`notes`.student_id = 1) [0m
+  [4;35;1mNote Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `students` [0m
+  [4;35;1mNote Load (1.3ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `students` [0m
+  [4;35;1mNote Load (1.1ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `students` [0m
+  [4;35;1mNote Load (1.1ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `students` [0m
+  [4;35;1mNote Load (1.1ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 5) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `students` [0m
+  [4;35;1mNote Load (1.1ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `students` [0m
+  [4;35;1mNote Load (1.1ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 7) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `students` [0m
+  [4;35;1mNote Load (1.1ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 8) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `students` [0m
+  [4;35;1mNote Load (1.2ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 9) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `students` [0m
+  [4;35;1mNote Load (1.1ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 10) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `students` [0m
+  [4;35;1mNote Load (1.1ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 11) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `students` [0m
+  [4;35;1mNote Load (1.1ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 12) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `students` [0m
+  [4;35;1mNote Load (1.1ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 13) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `students` [0m
+  [4;35;1mNote Load (1.1ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `students` [0m
+  [4;35;1mNote Load (1.1ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `students` [0m
+  [4;35;1mNote Load (1.2ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 16) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `students` [0m
+  [4;35;1mNote Load (1.2ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 17) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `students` [0m
+  [4;35;1mNote Load (1.2ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 18) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `students` [0m
+  [4;35;1mNote Load (1.1ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 19) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `students` [0m
+  [4;35;1mNote Load (1.2ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 20) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `students` [0m
+  [4;35;1mNote Load (1.2ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 21) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `students` [0m
+  [4;35;1mNote Load (1.1ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 22) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `students` [0m
+  [4;35;1mNote Load (1.1ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 23) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `students` [0m
+  [4;35;1mNote Load (1.1ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 24) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `students` [0m
+  [4;35;1mNote Load (1.1ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 25) [0m
+DEPRECATION WARNING: unverifiable_types is deprecated and has no effect. (called from /Volumes/data/voraz/voraz/kohonen/rails/vendor/plugins/rubyamf/app/mime_type.rb:3)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mStudent Load (0.3ms)[0m   [0;1mSELECT * FROM `students` [0m
+  [4;35;1mStudent Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `students`[0m
+  [4;36;1mNote Load (1.2ms)[0m   [0;1mSELECT * FROM `notes` WHERE (`notes`.student_id = 1) [0m
+  [4;35;1mNote Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+  [4;36;1mStudent Load (0.3ms)[0m   [0;1mSELECT * FROM `students` [0m
+  [4;35;1mNote Load (1.7ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 2) [0m
+  [4;36;1mStudent Load (0.5ms)[0m   [0;1mSELECT * FROM `students` [0m
+  [4;35;1mNote Load (1.2ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 3) [0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT * FROM `students` [0m
+  [4;35;1mNote Load (1.1ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 4) [0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT * FROM `students` [0m
+  [4;35;1mNote Load (1.1ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 5) [0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT * FROM `students` [0m
+  [4;35;1mNote Load (1.2ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 6) [0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT * FROM `students` [0m
+  [4;35;1mNote Load (1.1ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 7) [0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT * FROM `students` [0m
+  [4;35;1mNote Load (1.1ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 8) [0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT * FROM `students` [0m
+  [4;35;1mNote Load (1.1ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 9) [0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT * FROM `students` [0m
+  [4;35;1mNote Load (1.1ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 10) [0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT * FROM `students` [0m
+  [4;35;1mNote Load (1.0ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 11) [0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT * FROM `students` [0m
+  [4;35;1mNote Load (1.1ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 12) [0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT * FROM `students` [0m
+  [4;35;1mNote Load (1.1ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 13) [0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT * FROM `students` [0m
+  [4;35;1mNote Load (1.1ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 14) [0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT * FROM `students` [0m
+  [4;35;1mNote Load (1.1ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 15) [0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT * FROM `students` [0m
+  [4;35;1mNote Load (1.1ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 16) [0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT * FROM `students` [0m
+  [4;35;1mNote Load (1.1ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 17) [0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT * FROM `students` [0m
+  [4;35;1mNote Load (1.1ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 18) [0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT * FROM `students` [0m
+  [4;35;1mNote Load (1.1ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 19) [0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT * FROM `students` [0m
+  [4;35;1mNote Load (1.1ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 20) [0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT * FROM `students` [0m
+  [4;35;1mNote Load (1.1ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 21) [0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT * FROM `students` [0m
+  [4;35;1mNote Load (1.1ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 22) [0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT * FROM `students` [0m
+  [4;35;1mNote Load (1.1ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 23) [0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT * FROM `students` [0m
+  [4;35;1mNote Load (1.1ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 24) [0m
+  [4;36;1mStudent Load (0.2ms)[0m   [0;1mSELECT * FROM `students` [0m
+  [4;35;1mNote Load (1.1ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 25) [0m
+DEPRECATION WARNING: unverifiable_types is deprecated and has no effect. (called from /Volumes/data/voraz/voraz/kohonen/rails/vendor/plugins/rubyamf/app/mime_type.rb:3)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mStudent Load (0.3ms)[0m   [0;1mSELECT * FROM `students` [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mStudent Load (0.3ms)[0m   [0mSELECT * FROM `students` [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mStudent Load (0.3ms)[0m   [0;1mSELECT * FROM `students` [0m
+  [4;35;1mStudent Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `students`[0m
+  [4;36;1mNote Load (1.2ms)[0m   [0;1mSELECT * FROM `notes` WHERE (`notes`.student_id = 1) [0m
+  [4;35;1mNote Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+  [4;36;1mNote Load (1.2ms)[0m   [0;1mSELECT * FROM `notes` WHERE (`notes`.student_id = 2) [0m
+  [4;35;1mNote Load (1.2ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 3) [0m
+  [4;36;1mNote Load (1.2ms)[0m   [0;1mSELECT * FROM `notes` WHERE (`notes`.student_id = 4) [0m
+  [4;35;1mNote Load (1.1ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 5) [0m
+  [4;36;1mNote Load (1.1ms)[0m   [0;1mSELECT * FROM `notes` WHERE (`notes`.student_id = 6) [0m
+  [4;35;1mNote Load (1.1ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 7) [0m
+  [4;36;1mNote Load (1.1ms)[0m   [0;1mSELECT * FROM `notes` WHERE (`notes`.student_id = 8) [0m
+  [4;35;1mNote Load (1.2ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 9) [0m
+  [4;36;1mNote Load (1.2ms)[0m   [0;1mSELECT * FROM `notes` WHERE (`notes`.student_id = 10) [0m
+  [4;35;1mNote Load (1.1ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 11) [0m
+  [4;36;1mNote Load (1.1ms)[0m   [0;1mSELECT * FROM `notes` WHERE (`notes`.student_id = 12) [0m
+  [4;35;1mNote Load (1.1ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 13) [0m
+  [4;36;1mNote Load (1.1ms)[0m   [0;1mSELECT * FROM `notes` WHERE (`notes`.student_id = 14) [0m
+  [4;35;1mNote Load (1.1ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 15) [0m
+  [4;36;1mNote Load (1.1ms)[0m   [0;1mSELECT * FROM `notes` WHERE (`notes`.student_id = 16) [0m
+  [4;35;1mNote Load (1.1ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 17) [0m
+  [4;36;1mNote Load (1.2ms)[0m   [0;1mSELECT * FROM `notes` WHERE (`notes`.student_id = 18) [0m
+  [4;35;1mNote Load (1.1ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 19) [0m
+  [4;36;1mNote Load (1.1ms)[0m   [0;1mSELECT * FROM `notes` WHERE (`notes`.student_id = 20) [0m
+  [4;35;1mNote Load (1.1ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 21) [0m
+  [4;36;1mNote Load (1.1ms)[0m   [0;1mSELECT * FROM `notes` WHERE (`notes`.student_id = 22) [0m
+  [4;35;1mNote Load (1.1ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 23) [0m
+  [4;36;1mNote Load (1.1ms)[0m   [0;1mSELECT * FROM `notes` WHERE (`notes`.student_id = 24) [0m
+  [4;35;1mNote Load (1.1ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 25) [0m
+DEPRECATION WARNING: unverifiable_types is deprecated and has no effect. (called from /Volumes/data/voraz/voraz/kohonen/rails/vendor/plugins/rubyamf/app/mime_type.rb:3)
+DEPRECATION WARNING: unverifiable_types is deprecated and has no effect. (called from /Volumes/data/voraz/voraz/kohonen/rails/vendor/plugins/rubyamf/app/mime_type.rb:3)
+DEPRECATION WARNING: unverifiable_types is deprecated and has no effect. (called from /Volumes/data/voraz/voraz/kohonen/rails/vendor/plugins/rubyamf/app/mime_type.rb:3)
+DEPRECATION WARNING: unverifiable_types is deprecated and has no effect. (called from /Volumes/data/voraz/voraz/kohonen/rails/vendor/plugins/rubyamf/app/mime_type.rb:3)
+DEPRECATION WARNING: unverifiable_types is deprecated and has no effect. (called from /Volumes/data/voraz/voraz/kohonen/rails/vendor/plugins/rubyamf/app/mime_type.rb:3)
+DEPRECATION WARNING: unverifiable_types is deprecated and has no effect. (called from /Volumes/data/voraz/voraz/kohonen/rails/vendor/plugins/rubyamf/app/mime_type.rb:3)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mStudent Load (0.3ms)[0m   [0;1mSELECT * FROM `students` [0m
+  [4;35;1mStudent Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `students`[0m
+  [4;36;1mNote Load (1.2ms)[0m   [0;1mSELECT * FROM `notes` WHERE (`notes`.student_id = 1) [0m
+  [4;35;1mNote Columns (8.1ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+  [4;36;1mNote Load (1.2ms)[0m   [0;1mSELECT * FROM `notes` WHERE (`notes`.student_id = 2) [0m
+  [4;35;1mNote Load (1.1ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 3) [0m
+  [4;36;1mNote Load (1.4ms)[0m   [0;1mSELECT * FROM `notes` WHERE (`notes`.student_id = 4) [0m
+  [4;35;1mNote Load (1.1ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 5) [0m
+  [4;36;1mNote Load (1.1ms)[0m   [0;1mSELECT * FROM `notes` WHERE (`notes`.student_id = 6) [0m
+  [4;35;1mNote Load (1.1ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 7) [0m
+  [4;36;1mNote Load (1.2ms)[0m   [0;1mSELECT * FROM `notes` WHERE (`notes`.student_id = 8) [0m
+  [4;35;1mNote Load (1.1ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 9) [0m
+  [4;36;1mNote Load (1.1ms)[0m   [0;1mSELECT * FROM `notes` WHERE (`notes`.student_id = 10) [0m
+  [4;35;1mNote Load (1.1ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 11) [0m
+  [4;36;1mNote Load (1.1ms)[0m   [0;1mSELECT * FROM `notes` WHERE (`notes`.student_id = 12) [0m
+  [4;35;1mNote Load (1.1ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 13) [0m
+  [4;36;1mNote Load (1.0ms)[0m   [0;1mSELECT * FROM `notes` WHERE (`notes`.student_id = 14) [0m
+  [4;35;1mNote Load (1.1ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 15) [0m
+  [4;36;1mNote Load (1.1ms)[0m   [0;1mSELECT * FROM `notes` WHERE (`notes`.student_id = 16) [0m
+  [4;35;1mNote Load (1.1ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 17) [0m
+  [4;36;1mNote Load (1.0ms)[0m   [0;1mSELECT * FROM `notes` WHERE (`notes`.student_id = 18) [0m
+  [4;35;1mNote Load (1.1ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 19) [0m
+  [4;36;1mNote Load (1.1ms)[0m   [0;1mSELECT * FROM `notes` WHERE (`notes`.student_id = 20) [0m
+  [4;35;1mNote Load (1.1ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 21) [0m
+  [4;36;1mNote Load (1.1ms)[0m   [0;1mSELECT * FROM `notes` WHERE (`notes`.student_id = 22) [0m
+  [4;35;1mNote Load (1.1ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 23) [0m
+  [4;36;1mNote Load (1.1ms)[0m   [0;1mSELECT * FROM `notes` WHERE (`notes`.student_id = 24) [0m
+  [4;35;1mNote Load (1.0ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 25) [0m
+DEPRECATION WARNING: unverifiable_types is deprecated and has no effect. (called from /Volumes/data/voraz/voraz/kohonen/rails/vendor/plugins/rubyamf/app/mime_type.rb:3)
+DEPRECATION WARNING: unverifiable_types is deprecated and has no effect. (called from /Volumes/data/voraz/voraz/kohonen/rails/vendor/plugins/rubyamf/app/mime_type.rb:3)
+DEPRECATION WARNING: unverifiable_types is deprecated and has no effect. (called from /Volumes/data/voraz/voraz/kohonen/rails/vendor/plugins/rubyamf/app/mime_type.rb:3)
+  [4;36;1mSQL (108.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (48.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mStudent Load (132.4ms)[0m   [0;1mSELECT * FROM `students` [0m
+  [4;35;1mStudent Columns (58.0ms)[0m   [0mSHOW FIELDS FROM `students`[0m
+  [4;36;1mNote Load (213.4ms)[0m   [0;1mSELECT * FROM `notes` WHERE (`notes`.student_id = 1) [0m
+  [4;35;1mNote Columns (9.8ms)[0m   [0mSHOW FIELDS FROM `notes`[0m
+  [4;36;1mNote Load (25.8ms)[0m   [0;1mSELECT * FROM `notes` WHERE (`notes`.student_id = 2) [0m
+  [4;35;1mNote Load (1.1ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 3) [0m
+  [4;36;1mNote Load (1.1ms)[0m   [0;1mSELECT * FROM `notes` WHERE (`notes`.student_id = 4) [0m
+  [4;35;1mNote Load (1.2ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 5) [0m
+  [4;36;1mNote Load (1.1ms)[0m   [0;1mSELECT * FROM `notes` WHERE (`notes`.student_id = 6) [0m
+  [4;35;1mNote Load (1.2ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 7) [0m
+  [4;36;1mNote Load (1.1ms)[0m   [0;1mSELECT * FROM `notes` WHERE (`notes`.student_id = 8) [0m
+  [4;35;1mNote Load (1.1ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 9) [0m
+  [4;36;1mNote Load (1.1ms)[0m   [0;1mSELECT * FROM `notes` WHERE (`notes`.student_id = 10) [0m
+  [4;35;1mNote Load (1.1ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 11) [0m
+  [4;36;1mNote Load (1.1ms)[0m   [0;1mSELECT * FROM `notes` WHERE (`notes`.student_id = 12) [0m
+  [4;35;1mNote Load (1.2ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 13) [0m
+  [4;36;1mNote Load (1.1ms)[0m   [0;1mSELECT * FROM `notes` WHERE (`notes`.student_id = 14) [0m
+  [4;35;1mNote Load (1.1ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 15) [0m
+  [4;36;1mNote Load (1.1ms)[0m   [0;1mSELECT * FROM `notes` WHERE (`notes`.student_id = 16) [0m
+  [4;35;1mNote Load (1.1ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 17) [0m
+  [4;36;1mNote Load (1.1ms)[0m   [0;1mSELECT * FROM `notes` WHERE (`notes`.student_id = 18) [0m
+  [4;35;1mNote Load (1.1ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 19) [0m
+  [4;36;1mNote Load (1.1ms)[0m   [0;1mSELECT * FROM `notes` WHERE (`notes`.student_id = 20) [0m
+  [4;35;1mNote Load (1.1ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 21) [0m
+  [4;36;1mNote Load (1.1ms)[0m   [0;1mSELECT * FROM `notes` WHERE (`notes`.student_id = 22) [0m
+  [4;35;1mNote Load (1.1ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 23) [0m
+  [4;36;1mNote Load (1.1ms)[0m   [0;1mSELECT * FROM `notes` WHERE (`notes`.student_id = 24) [0m
+  [4;35;1mNote Load (1.1ms)[0m   [0mSELECT * FROM `notes` WHERE (`notes`.student_id = 25) [0m

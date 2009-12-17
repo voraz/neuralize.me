@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:VBox xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		 xmlns:s="library://ns.adobe.com/flex/spark" 
+		 xmlns:mx="library://ns.adobe.com/flex/halo" 
+		 xmlns:bar="me.neuralize.train.view.components.bar.*"
+		 xmlns:util="me.neuralize.app.view.components.util.*"
+		 creationComplete="vbox1_creationCompleteHandler(event)"
+		 >
+
+	<fx:Script>
+		<![CDATA[
+			import mx.events.FlexEvent;
+			private var previousWidth:Number
+			
+			protected function vbox1_creationCompleteHandler(event:FlexEvent):void{
+				randomizeWeights_changeHandler()
+			}
+			
+			public function onStartTrain(event:MouseEvent=null):void{
+				previousWidth = this.width
+				this.width = 0
+				buttonTrain.includeInLayout = buttonTrain.visible = false
+				buttonStop.includeInLayout = buttonStop.visible = true
+				form.enabled = false
+			}
+
+			protected function buttonStop_clickHandler(event:MouseEvent):void{
+				this.width = previousWidth
+				buttonTrain.includeInLayout = buttonTrain.visible = true
+				buttonStop.includeInLayout = buttonStop.visible = false 
+				form.visible = true
+			}
+
+
+			protected function randomizeWeights_changeHandler(event:Event=null):void{
+				formItemStartWeights.includeInLayout = formItemStartWeights.visible = !randomizeWeights.selected
+				formItemEndWeights.includeInLayout = formItemEndWeights.visible = !randomizeWeights.selected
+			}
+
+
+		]]>
+	</fx:Script>
+
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+	
+	<mx:Form id="form" labelWidth="80" width="100%"  minWidth="0" >
+
+		<util:FormHead_default label="Training"/>
+			<mx:FormItem label="Data:">
+				<mx:ComboBox id="list" labelField="title" />
+			</mx:FormItem>
+			
+			<mx:FormItem label="Times:">
+				<s:TextInput id="training_times" text="50"/>
+			</mx:FormItem>
+			<mx:FormItem label="Update at:" direction="horizontal">
+				<s:TextInput id="update_at" text="5"/>
+				<s:Label text="sec"/>
+			</mx:FormItem>
+		
+		<util:FormHead_default label="Exibition"/>
+			<mx:FormItem label="Columns:">
+				<s:NumericStepper id="exibitionColumns" minimum="1" maximum="200" value="10"  /> 
+			</mx:FormItem>
+			<mx:FormItem label="Lines:">
+				<s:NumericStepper id="exibitionLines" minimum="1" maximum="200" value="20"/> 
+			</mx:FormItem>
+
+		<util:FormHead_default label="Weights"/>
+			<mx:FormItem label="Randomize?" id="formItemRandomize" toolTip="Randomize between minimum and maximun of each column">
+				<mx:CheckBox id="randomizeWeights" selected="true" change="randomizeWeights_changeHandler(event)"/>
+			</mx:FormItem>
+			
+			<mx:FormItem label="Start:" id="formItemStartWeights"> 
+				<s:TextInput id="startWeights" text="0" />
+			</mx:FormItem>
+			<mx:FormItem label="End:" id="formItemEndWeights">
+				<s:TextInput id="endWeights" text="100"/>
+			</mx:FormItem> 
+		
+		<util:FormHead_default label="Neighborhood"/>
+			<mx:FormItem label="Start:"> 
+				<s:TextInput id="startRange" text="15" />
+			</mx:FormItem>
+			<mx:FormItem label="End:">
+				<s:TextInput id="endRange" text="1"/>
+			</mx:FormItem> 
+
+
+		
+		<util:FormHead_default label="Learning (Alpha)"/>
+			<mx:FormItem label="Start:">
+				<s:TextInput id="startAlpha" text="0.01" />
+			</mx:FormItem>
+			<mx:FormItem label="End:">
+				<s:TextInput id="endAlpha" text="0.0001"/>
+			</mx:FormItem>
+		
+	</mx:Form>
+	
+	<s:Button id="buttonTrain" label="Train" width="100%" height="30" click="onStartTrain(event)"/>
+	<s:Button id="buttonStop" label="Stop" width="100%" height="30"  click="buttonStop_clickHandler(event)" includeInLayout="false" visible="false" />
+	
+	
+</mx:VBox>

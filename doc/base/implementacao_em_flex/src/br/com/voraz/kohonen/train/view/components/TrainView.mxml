@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009" 
+	xmlns:s="library://ns.adobe.com/flex/spark" 
+	xmlns:mx="library://ns.adobe.com/flex/halo" 
+	width="100%" height="100%" autoLayout="true"
+	
+	creationComplete="start()"
+	>
+	
+	<s:layout>
+		<s:BasicLayout/>
+	</s:layout>
+	<fx:Script>
+		<![CDATA[
+			import br.com.voraz.kohonen.train.controller.TrainCommand;
+			public var command:TrainCommand
+			private function start():void{
+				command = new TrainCommand(area)
+			}
+		]]>
+	</fx:Script>
+	<mx:RichTextEditor width="100%" height="100%" id="area" verticalScrollPolicy="on" creationPolicy="all" color="#FFFFFF"/>
+		
+	<!--
+	<mx:DividedBox width="100%" height="100%">
+		<s:VGroup>
+			<mx:Label text="Parâmetros" />
+			<mx:Form>
+			</mx:Form>
+		</s:VGroup>
+	</mx:DividedBox>
+	-->
+</s:Group>

@@ -1,0 +1,26 @@
+development:
+  adapter: mysql
+  encoding: utf8
+  database: kohonen_development
+  pool: 5
+  username: root
+  password: 123
+  socket: /opt/local/var/run/mysql5/mysqld.sock
+
+test:
+  adapter: mysql
+  encoding: utf8
+  database: kohonen_test
+  pool: 5
+  username: root
+  password: 123
+  socket: /opt/local/var/run/mysql5/mysqld.sock
+
+production:
+  adapter: mysql
+  encoding: utf8
+  database: kohonen_production
+  pool: 5
+  username: root
+  password: 123
+  socket: /opt/local/var/run/mysql5/mysqld.sock

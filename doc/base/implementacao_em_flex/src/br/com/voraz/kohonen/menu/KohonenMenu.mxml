@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:s="library://ns.adobe.com/flex/spark" xmlns:mx="library://ns.adobe.com/flex/halo" width="400" height="300">
+	<s:layout>
+		<s:BasicLayout/>
+	</s:layout>
+
+	<fx:Declarations>
+        <fx:XMLList id="menuXML">
+            <fx:menuitem label="Data">
+                <fx:menuitem label="New" data="New"/>
+                <fx:menuitem label="List" data="New"/>
+            </fx:menuitem>
+            <fx:menuitem label="Train" />
+        </fx:XMLList>
+    </fx:Declarations>
+
+
+    <mx:ApplicationControlBar id="dockedBar" 
+        dock="true">
+        <mx:MenuBar height="100%" 
+            dataProvider="{menuXML}" 
+            labelField="@label" 
+            showRoot="true"/>
+        <mx:HBox paddingBottom="5" 
+            paddingTop="5">
+            <mx:Spacer width="100%"/>
+        </mx:HBox>
+    </mx:ApplicationControlBar>
+</s:Group>

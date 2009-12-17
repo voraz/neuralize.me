@@ -1,0 +1,20 @@
+/* CSS file */
+@namespace s "library://ns.adobe.com/flex/spark";
+@namespace mx "library://ns.adobe.com/flex/halo";
+@namespace components "me.neuralize.train.view.components.*";
+@namespace components1 "me.neuralize.app.view.components.*";
+@namespace ns "me.neuralize.data_insert.view.components.*";
+
+mx|TitleWindow{
+}
+
+mx|Button{
+	cornerRadius: 3;
+}
+
+mx|Panel{
+	cornerRadius: 6;
+}
+s|Panel{
+	cornerRadius: 6;
+}

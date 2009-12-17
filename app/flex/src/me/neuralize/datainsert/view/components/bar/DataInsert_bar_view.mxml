@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:VBox xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		  xmlns:s="library://ns.adobe.com/flex/spark" 
+		  xmlns:mx="library://ns.adobe.com/flex/halo"
+		  xmlns:bar="me.neuralize.train.view.components.bar.*"
+		  xmlns:util="me.neuralize.app.view.components.util.*"
+		  >
+	
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+	
+	<mx:Form height="100%" labelWidth="80" width="100%">
+		
+		<util:FormHead_default label="Title"/>
+			<s:TextInput width="100%" />
+		
+		<util:FormHead_default label="Description"/>
+			<s:TextArea width="100%"  height="100%"/>
+	</mx:Form>
+	
+	<mx:Button icon="@Embed(source='css/icons/import.png')" label="Import from .txt" width="100%" height="30"/>
+	
+</mx:VBox>

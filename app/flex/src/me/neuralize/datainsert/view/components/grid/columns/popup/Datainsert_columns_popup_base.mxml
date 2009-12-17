@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Panel xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		 xmlns:s="library://ns.adobe.com/flex/spark" 
+		 xmlns:mx="library://ns.adobe.com/flex/halo"
+		 
+		 width="350"
+		 height="290"
+		 title="Add new column"
+		 >
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+	
+	<mx:VBox width="100%" horizontalAlign="center" height="95%" verticalAlign="middle">
+		<mx:Form width="100%">
+			<mx:FormItem fontWeight="bold" verticalCenter="0">
+				<s:CheckBox label="Included in training" id="cbIncluded" selected="true" />
+			</mx:FormItem>
+			<mx:FormItem label="Title" required="true"  fontWeight="bold" width="100%">
+				<s:TextInput id="txtTitle" width="100%" color="#000000" fontWeight="normal"/>
+				<s:Label text="Informe o título" color="#FF0000" id="txtMessage" visible="false" includeInLayout="false"/>
+			</mx:FormItem>
+			<mx:FormItem label="Description"  fontWeight="bold" width="100%">
+				<s:TextArea id="txtDescription" height="100" width="100%" color="#000000" fontWeight="normal"/>
+			</mx:FormItem>
+		</mx:Form>
+		<mx:HBox width="100%" horizontalAlign="center">
+			<mx:Button label="Ok" id="btOk" />
+			<mx:Button label="Cancel" id="btCancel"/>
+		</mx:HBox>
+	</mx:VBox>	
+</s:Panel>

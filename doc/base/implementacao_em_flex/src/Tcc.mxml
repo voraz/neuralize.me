@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Application xmlns:fx="http://ns.adobe.com/mxml/2009" 
+	xmlns:s="library://ns.adobe.com/flex/spark" 
+	xmlns:mx="library://ns.adobe.com/flex/halo" 
+	minWidth="1024" 
+	minHeight="768" 
+	xmlns:menu="br.com.voraz.kohonen.menu.*" 
+	xmlns:components="br.com.voraz.kohonen.train.view.components.*"
+	creationPolicy="all"
+	>
+	<fx:Script>
+		<![CDATA[
+			import mx.events.FlexEvent;
+		]]>
+	</fx:Script>
+
+
+	<fx:Style source="Tcc.css"/>
+	
+	<!--
+	<menu:KohonenMenu width="100%" />
+	-->
+	
+	<components:TrainView id="trainView" width="100%" />
+	<!--
+	<s:Button click="trainView.command.start()" label="vai"/>
+	-->
+</s:Application>

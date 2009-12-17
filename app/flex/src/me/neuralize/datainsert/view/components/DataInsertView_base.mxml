@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<containers:DefaultTitleWindow xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		 xmlns:s="library://ns.adobe.com/flex/spark" 
+		 xmlns:mx="library://ns.adobe.com/flex/halo" 
+		 xmlns:grid="DataInsert.view.components.grid.*" 
+		 xmlns:options="DataInsert.view.components.options.*" 
+		 xmlns:ns="DataInsert.view.components.controllers_grid.*" 
+		 xmlns:bar="me.neuralize.datainsert.view.components.bar.*" 
+		 xmlns:grid1="me.neuralize.datainsert.view.components.grid.*" 
+		 xmlns:ns1="me.neuralize.datainsert.view.components.grid.controllers_grid.*" 
+		 xmlns:containers="me.neuralize.app.view.components.util.containers.*"
+
+		 title="Data insert"
+		 width="100%" 
+		 height="100%" 
+		 paddingTop="0" paddingLeft="0" paddingRight="0" paddingBottom="0"
+		 >
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+	<mx:HDividedBox height="100%" width="100%">
+		<bar:DataInsert_bar_view id="bar" height="100%"/>
+		<mx:HBox height="100%" width="100%">
+			<ns1:ControllerGrid id="controllersGrid"/>
+			
+			<s:Scroller width="100%" height="100%">
+				<s:Group>
+					<grid1:Datainsert_grid id="grid" height="100%"/>
+				</s:Group>
+			</s:Scroller>
+			
+		</mx:HBox>
+	</mx:HDividedBox>
+	
+	
+</containers:DefaultTitleWindow>

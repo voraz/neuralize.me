@@ -1,0 +1,91 @@
+
+@font-face {
+  	src: local("Arial");
+    fontFamily: "Arial";
+    fontWeight: normal;
+    unicodeRange: "U+0020-U+002F,U+0030-U+0039,U+003A-U+0040,U+0041-U+005A,U+005B-U+0060,U+0061-U+007A,U+007B-U+007E,U+0020-U+00FF"
+}
+
+@font-face {
+  	src: local("Arial");
+    fontFamily: "Arial";
+    fontWeight: bold;
+    unicodeRange: "U+0020-U+002F,U+0030-U+0039,U+003A-U+0040,U+0041-U+005A,U+005B-U+0060,U+0061-U+007A,U+007B-U+007E,U+0020-U+00FF"     
+}
+@font-face {
+	src: local("Arial");
+    fontFamily: "Arial";
+    font-style: italic;
+    unicodeRange: "U+0020-U+002F,U+0030-U+0039,U+003A-U+0040,U+0041-U+005A,U+005B-U+0060,U+0061-U+007A,U+007B-U+007E,U+0020-U+00FF"    
+}
+
+.mdiWindowTitleStyle{
+    font-family: Tahoma;
+    font-size: 14;
+    font-weight:bold;
+    color: #000000;
+   	text-align:left;
+}
+
+.mdiWindowFocus{
+    borderColor: #286fb8;
+    borderAlpha: 1;
+    borderThicknessLeft: 2;
+    borderThicknessTop: 0;
+    borderThicknessBottom: 2;
+    borderThicknessRight: 2;
+    roundedBottomCorners: false;
+    cornerRadius: 5;
+    dropShadowEnabled: true;
+    headerHeight: 29;
+    backgroundAlpha: 1; 
+    backgroundColor: #FFFFFF;
+    titleStyleName: "mdiWindowTitleStyle";
+    
+    controlButtonWidth: 15;
+    controlButtonHeight: 15;
+    controlButtonGap: 4;
+}
+
+.mdiWindowHeaderStyle{
+	background-color: #FFFFFF;
+	background-alpha: 100;
+	header-height: 30;
+	border-alpha: 100;
+	border-color: #FFFFFF;
+	border-style: solid;
+}
+
+MenuBar{
+ 	font-family: Tahoma;
+    font-size: 14;
+    font-weight:bold;	
+	color:#000000;
+	font-size:13;
+}	
+
+Application {
+   themeColor: #399efc;
+   background-alpha:100;
+   background-disabled-color:#FFFFFF;
+   background-color: #FFFFFF;
+   font-family: Arial;
+   font-size: 12;
+}
+
+
+Alert{
+	background-color: #4289d2;	
+	border-color: #4289d2;
+}
+
+Panel{
+	background-color: #FFFFFF;
+	border-color: #4289d2
+}
+
+global {
+    modal-transparency: 0.5;
+    modal-transparency-color: #000000;
+    modal-transparency-blur: 0.5;
+}

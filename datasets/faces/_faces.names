@@ -1,0 +1,5 @@
+filename # the file name # false
+userid # is the user id of the person in the image, and this field has 20 values: an2i, at33, boland, bpm, ch4f, cheyer, choon, danieln, glickman, karyadi, kawamura, kk49, megak, mitchell, night, phoebe, saavik, steffi, sz24, and tammo. # true
+pose # is the head position of the person, and this field has 4 values: straight, left, right, up. # true
+expression # is the facial expression of the person, and this field has 4 values: neutral, happy, sad, angry. # false
+eyes # is the eye state of the person, and this field has 2 values: open, sunglasses. # true

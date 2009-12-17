@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>Neuralize.me</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>com.adobe.flexbuilder.project.flexbuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>com.adobe.flexbuilder.project.flexnature</nature>
+		<nature>com.adobe.flexbuilder.project.actionscriptnature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>[source path] VorazLib_MVC-src</name>
+			<type>2</type>
+			<location>Y:/voraz/VorazLib_MVC/src</location>
+		</link>
+		<link>
+			<name>[source path] VorazLib_flash-src</name>
+			<type>2</type>
+			<location>Y:/voraz/VorazLib_flash/src</location>
+		</link>
+		<link>
+			<name>bin-debug</name>
+			<type>2</type>
+			<location>Y:/neuralize-me/app/rails/public/site</location>
+		</link>
+	</linkedResources>
+</projectDescription>

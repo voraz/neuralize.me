@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:HBox xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		 xmlns:s="library://ns.adobe.com/flex/spark" 
+		 xmlns:mx="library://ns.adobe.com/flex/halo">
+
+	<fx:Script>
+		<![CDATA[
+			import me.neuralize.app.ApplicationFacade;
+			import me.neuralize.train.model.TrainProxy;
+			protected function button1_clickHandler(event:MouseEvent):void{
+				ApplicationFacade.getInstance().sendNotification( TrainProxy.GRID_ITEM_REMOVE, this.data)
+			}
+		]]>
+	</fx:Script>
+
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+
+	<s:Button width="100%" label="-" click="button1_clickHandler(event)"/>
+
+</mx:HBox>

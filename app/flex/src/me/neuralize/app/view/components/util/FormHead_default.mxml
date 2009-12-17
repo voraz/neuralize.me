@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:HGroup xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		  xmlns:s="library://ns.adobe.com/flex/spark" 
+		  xmlns:mx="library://ns.adobe.com/flex/halo" 
+		  width="100%"
+		  verticalAlign="middle"
+		  paddingTop="15"
+		  >
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+	
+	<fx:Script>
+		<![CDATA[
+			[Bindable]
+			public var label:String
+		]]>
+	</fx:Script>
+	<s:Label id="head" text="{label}"  fontWeight="bold" fontSize="12"/>
+	<mx:HRule width="100%"/>
+	
+</s:HGroup>

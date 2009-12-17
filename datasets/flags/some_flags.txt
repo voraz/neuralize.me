@@ -1,0 +1,12 @@
+Afghanistan,5,1,648,16,10,2,0,3
+Albania,3,1,29,3,6,6,0,0
+Algeria,4,1,2388,20,8,2,2,0
+American-Samoa,6,3,0,0,1,1,0,0
+Andorra,3,1,0,0,6,0,3,0
+Angola,4,2,1247,7,10,5,0,2
+Anguilla,1,4,0,0,1,1,0,1
+Antigua-Barbuda,1,4,0,0,1,1,0,1
+Argentina,2,3,2777,28,2,0,0,3
+Australia,6,2,7690,15,1,1,0,0
+Austria,3,1,84,8,4,0,0,3
+

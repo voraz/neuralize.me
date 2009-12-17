@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<containers:DefaultTitleWindow xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		 xmlns:s="library://ns.adobe.com/flex/spark" 
+		 xmlns:mx="library://ns.adobe.com/flex/halo" 
+		 xmlns:bar="me.neuralize.train.view.components.bar.*"
+		 xmlns:result="me.neuralize.train.view.components.result.*"
+		 creationComplete="panel1_creationCompleteHandler(event)"
+		 xmlns:comparative="me.neuralize.train.view.components.comparative.*"
+		 xmlns:containers="me.neuralize.app.view.components.util.containers.*"
+		 >
+	<fx:Script>
+		<![CDATA[
+			import me.neuralize.app.ApplicationFacade;
+			import me.neuralize.train.model.TrainProxy;
+			
+			import mx.events.DividerEvent;
+			import mx.events.FlexEvent;
+			import mx.events.ListEvent;
+			
+			import spark.events.TextOperationEvent;
+			private var barWidth:Number
+
+			protected function hdividedbox1_dividerPressHandler(event:DividerEvent):void{
+				/*
+				trace(event.currentTarget, event.delta, event.eventPhase, event.bubbles)
+				if(bar.visible){
+					barWidth = bar.width
+					bar.width=0;
+					bar.visible=false
+				}else{
+					bar.width=barWidth;
+					bar.visible=true
+				}
+				*/
+			}
+			public function onStartTrain():void{
+				bar.onStartTrain()
+				controls.visible = controls.includeInLayout = true
+			}
+			
+			public function updateLinesAndColumns(e:Event=null):void{
+				var columns:int = bar.exibitionColumns.value
+				var lines:int = bar.exibitionLines.value
+					
+				result.background.columns = columns
+				result.background.lines = lines
+				result.grid.setWeightsSize(lines, columns)
+			}
+
+
+			protected function panel1_creationCompleteHandler(event:FlexEvent):void{
+				bar.exibitionColumns.addEventListener(TextOperationEvent.CHANGE, updateLinesAndColumns)
+				bar.exibitionLines.addEventListener(TextOperationEvent.CHANGE, updateLinesAndColumns)
+				updateLinesAndColumns()
+				controls.visible = controls.includeInLayout = false
+			}
+
+
+			protected function autoChange_changeHandler(event:Event):void{
+				if(autoChange.selected)
+					timeline.value = timeline.maximum
+			}
+
+			protected function timeline_valueCommitHandler(event:Event):void{
+				ApplicationFacade.getInstance().sendNotification( TrainProxy.SHOW_STEP, timeline.value)
+			}
+			
+			protected function labelFieldList_changeHandler(event:ListEvent=null):void{
+				if(showLabel.selected){
+					result.grid.changeLabelField( labelFieldList.selectedIndex )
+				}else{
+					result.grid.changeLabelField( -1 )
+				}
+			}
+			
+			
+			protected function labelFieldList_openHandler(event:Event):void{
+				labelFieldList.dropdown.variableRowHeight = true
+				labelFieldList.dropdown.wordWrap = true
+			}
+			public function setTimelineMax(value:int):void{
+				timeline.maximum = value
+				if(autoChange.selected)
+					timeline.value = value
+			}
+
+		]]>
+	</fx:Script>
+
+	<s:VGroup width="100%" height="100%" horizontalAlign="center">
+		<s:HGroup id="controls" verticalAlign="middle" width="100%" gap="100">
+			<mx:FormItem label="Timeline:" direction="horizontal" width="80%">
+				<s:HSlider id="timeline" width="100%" 
+						   snapInterval="1" minimum="0" maximum="0" 
+						   valueCommit="timeline_valueCommitHandler(event)"
+						   change="autoChange.selected=false"
+						   />
+				<s:CheckBox id="autoChange" label="Auto Change?" selected="true" change="autoChange_changeHandler(event)"/>	
+			</mx:FormItem>
+				
+			<mx:FormItem label="Label Field:" direction="horizontal" width="20%">
+				<mx:ComboBox id="labelFieldList" labelField="title" change="labelFieldList_changeHandler(event)" rowCount="10" open="labelFieldList_openHandler(event)">
+					<mx:itemRenderer>
+						<fx:Component>
+							<mx:Text selectable="false" toolTip="{data.description}"/>
+						</fx:Component>
+					</mx:itemRenderer>
+				</mx:ComboBox>
+				<s:CheckBox id="showLabel" label="Show Label?" selected="false"  change="labelFieldList_changeHandler()" />
+			</mx:FormItem>
+		</s:HGroup>
+		
+		<mx:VDividedBox width="100%" height="100%" >
+			<mx:HDividedBox width="100%" height="100%" minHeight="200">
+				<bar:Train_bar id="bar" minWidth="0"  />
+				<result:Train_result_view id="result" width="100%" height="100%"/>
+			</mx:HDividedBox>
+			<comparative:Train_comparative id="comparative" height="0"/>
+		</mx:VDividedBox>
+	</s:VGroup>
+	
+</containers:DefaultTitleWindow>

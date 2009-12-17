@@ -1,0 +1,30 @@
+name # Name of the country concerned # false
+landmass # 1=N.America, 2=S.America, 3=Europe, 4=Africa, 4=Asia, 6=Oceania # false
+zone # Geographic quadrant, based on Greenwich and the Equator 1=NE, 2=SE, 3=SW, 4=NW # false
+area # in thousands of square km # false
+population # in round millions # false
+language #  1=English, 2=Spanish, 3=French, 4=German, 5=Slavic, 6=Other Indo-European, 7=Chinese, 8=Arabic, 9=Japanese/Turkish/Finnish/Magyar, 10=Others # false
+religion #  0=Catholic, 1=Other Christian, 2=Muslim, 3=Buddhist, 4=Hindu, 5=Ethnic, 6=Marxist, 7=Others # false
+bars # Number of vertical bars in the flag # true
+stripes # Number of horizontal stripes in the flag # true
+colours # Number of different colours in the flag # true
+red # 0 if red absent, 1 if red present in the flag # true
+gree # same for green # true
+blue # same for blue # true
+gold # same for gold (also yellow) # true
+white # same for white # true
+black # same for black # true
+orange # same for orange (also brown) # true
+mainhue # predominant colour in the flag (tie-breaks decided by taking the topmost hue, if that fails then the most central hue, and if that fails the leftmost hue) # false
+circles # Number of circles in the flag # true
+crosses # Number of (upright) crosses # true
+saltires # Number of diagonal crosses # true
+quarters # Number of quartered sections # true
+sunstars # Number of sun or star symbols # true
+crescent # 1 if a crescent moon symbol present, else 0 # true
+triangle # 1 if any triangles present, 0 otherwise # true
+icon # 1 if an inanimate image present (e.g., a boat), otherwise 0 # true
+animate # 1 if an animate image (e.g., an eagle, a tree, a human hand) present, 0 otherwise # true
+text # 1 if any letters or writing on the flag (e.g., a motto or slogan), 0 otherwise # true
+topleft # colour in the top-left corner (moving right to decide tie-breaks) # true
+botright # Colour in the bottom-left corner (moving left to decide tie-breaks) # true

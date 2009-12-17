@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Application xmlns:fx="http://ns.adobe.com/mxml/2009" 
+			   xmlns:s="library://ns.adobe.com/flex/spark" 
+			   xmlns:mx="library://ns.adobe.com/flex/halo" 
+			   minWidth="640" 
+			   minHeight="480" 
+			   xmlns:components="me.neuralize.train.view.components.*"
+			   creationComplete="application1_creationCompleteHandler(event)"
+			   xmlns:components1="me.neuralize.app.view.components.*" 
+			   xmlns:ns="me.neuralize.data_insert.view.components.*" 
+			   xmlns:components2="me.neuralize.datainsert.view.components.*"
+			   >
+	
+	<fx:Script>
+		<![CDATA[
+			import com.greensock.plugins.TintPlugin;
+			import com.greensock.plugins.TweenPlugin;
+			
+			import me.neuralize.app.ApplicationFacade;
+			import me.neuralize.app.view.ApplicationMediator;
+			
+			import mx.controls.Alert;
+			import mx.events.FlexEvent;
+			
+			protected function application1_creationCompleteHandler(event:FlexEvent):void{
+				ApplicationFacade.getInstance().registerMediator( new ApplicationMediator(this) )
+				TweenPlugin.activate([TintPlugin]);
+			}
+
+		]]>
+	</fx:Script>
+	
+	<fx:Style source="css/Neuralize.css"/>
+
+	<s:VGroup width="100%" height="100%">
+		<components1:Application_menu width="100%" dock="true"/>
+		<s:Group id="container" width="100%" height="100%"/>
+		<!-- 
+		<components:TrainView width="100%"  height="100%" />
+		<components2:DataInsertView width="100%" height="100%" />
+		-->
+		
+		<!--
+		<ns:DataInsertView width="100%" height="100%" />
+		-->
+	</s:VGroup>
+		
+</s:Application>

@@ -1,0 +1,16 @@
+clear
+
+
+
+mxmlc -compatibility-version=3.0.0 src/Neuralize.mxml \
+    -compiler.source-path \
+        src \
+        /data/voraz/voraz/VorazLib_flash/src \
+        /data/voraz/voraz/VorazLib_MVC/src \
+     -library-path /opt/flex/sdk3/frameworks/libs
+     
+#    -output ../../../public/flash/identidade.swf  \
+#    -default-size 760 500 \
+#    -default-frame-rate 30
+
+#firefox http://localhost:3000/site_identity#/cores/ &

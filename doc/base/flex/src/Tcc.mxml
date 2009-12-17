@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ApplicationView
+	xmlns="br.com.voraz.konohen.app.view.components.*"
+	xmlns:mx="http://www.adobe.com/2006/mxml" 
+	layout="absolute"
+	creationPolicy="all"
+	creationComplete="onCreationComplete()"
+	>
+	<mx:Script>
+		<![CDATA[
+			private function onCreationComplete(e:Event=null):void{
+				start = this;
+			}
+		]]>
+	</mx:Script>
+	<mx:HBox x="0" y="0" width="100%" height="100%" horizontalAlign="center">
+		<mx:TextArea width="100%" id="log" backgroundColor="#000000" color="#FFFFFF" text="ffffffffffffff" height="100%" wordWrap="false" fontSize="10"/>
+	</mx:HBox>
+</ApplicationView>

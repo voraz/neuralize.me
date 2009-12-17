@@ -1,0 +1,10 @@
+/* CSS file */
+@namespace s "library://ns.adobe.com/flex/spark";
+@namespace mx "library://ns.adobe.com/flex/halo";
+
+
+global
+{
+	baseColor: #D0D0D0;
+	contentBackgroundColor: #000000;
+}
