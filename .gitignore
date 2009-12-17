@@ -1,1 +1,3 @@
-public/uploads/*
+public/uploads/**/*
+log/**/*
+
